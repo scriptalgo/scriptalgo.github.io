@@ -1,1 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Script_Algo | TradingView Scripts</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #0e0e0e;
+      color: #fff;
+      line-height: 1.6;
+    }
+    header {
+      background: #1f1f1f;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .button {
+      display: inline-block;
+      padding: 15px 25px;
+      background: #ff9800;
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      margin-top: 20px;
+      transition: background 0.3s ease;
+    }
+    .button:hover {
+      background: #ffc107;
+    }
+    footer {
+      background: #1f1f1f;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Script_Algo</h1>
+    <p>TradingView скрипты и стратегии 📈</p>
+  </header>
+
+  <section>
+    <h2>🚀 О моих скриптах</h2>
+    <p>Создаю стратегии и индикаторы для TradingView, которые помогают трейдерам автоматизировать и улучшать свои результаты.</p>
+  </section>
+
+  <section>
+    <h2>💳 Купить доступ</h2>
+    <p>Нажмите на кнопку ниже, чтобы оформить оплату и получить доступ к моим скриптам.</p>
+    <div id="paypal-button-container-P-76K7891791436911LNDD2IKI"></div>
+<script src="https://www.paypal.com/sdk/js?client-id=ARXB8PhJzSo_K-cMXB8haaIK1Lup9KydCn1PcUx2bFBiulRqXk2qUoUuND6hr0dFy-Ci8Dq-9LDIeVC4&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+<script>
+  paypal.Buttons({
+      style: {
+          shape: 'rect',
+          color: 'gold',
+          layout: 'vertical',
+          label: 'subscribe'
+      },
+      createSubscription: function(data, actions) {
+        return actions.subscription.create({
+          /* Creates the subscription */
+          plan_id: 'P-76K7891791436911LNDD2IKI'
+        });
+      },
+      onApprove: function(data, actions) {
+        alert(data.subscriptionID); // You can add optional success message for the subscriber here
+      }
+  }).render('#paypal-button-container-P-76K7891791436911LNDD2IKI'); // Renders the PayPal button
+</script>
+  </section>
+
+  <section>
+    <h2>📩 Контакты</h2>
+    <p>TradingView: <a href="https://www.tradingview.com/u/Script_Algo/" target="_blank">@Script_Algo</a></p>
+    <p>Telegram: <a href="https://t.me/Script_Algo" target="_blank">@Script_Algo</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Script_Algo. Все права защищены.
+  </footer>
+</body>
+</html>
+
 
